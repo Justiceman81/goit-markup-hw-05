@@ -336,7 +336,6 @@ img {
   border-color: #4d5ae5;
 }
 .label-checkbox {
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -349,19 +348,19 @@ img {
   fill: #fff;
 }
 .checkbox-view {
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  margin-right: 8px;
-  fill: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  cursor: pointer;
+  margin-right: 8px;
 }
 #user-privacy:checked + .label-checkbox .checkbox-view {
   background-color: #404bbf;
@@ -696,4 +695,3 @@ img {
 .subscribe-icon {
   margin-left: 16px;
 }
-/* Для бекдропу можна додавати opacity: 0; visibility: hidden; pointer-events: none; А для селектора .backdrop.is-open - opacity; 1;  pointer-events: auto; visibility: visible; */
